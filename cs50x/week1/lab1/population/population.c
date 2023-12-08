@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
@@ -16,7 +17,7 @@ int main(void)
     {
         startPop = get_int("Starting Population Size: ");
     }
-    while (startPop > 0 && startPop < 9);
+    while (startPop < 9);
 
     // TODO: Prompt for end size
     // * do while loop to force the user to input a positive integer equal to or higher than the starting population size
@@ -25,31 +26,29 @@ int main(void)
     {
         endPop = get_int("Ending Population Size: ");
     }
-    while (endPop > 0 && endPop <= startPop);
+    while (endPop < startPop);
 
     // TODO: Calculate number of years until we reach threshold
     // * need a counter named years to increment
     // * do-while loop again to incrementally add babies born and minus people who died, then if the number has not hit the end population size, add 1 to years
     do
     {
-        // born = startPop / 3;
-        // die = startPop / 4;
+        // born = floor(startPop / 3);
+        // die = floor(startPop / 4);
         // startPop += born;
         // startPop -= die;
-
-        // * shorten the code
-        startPop += (startPop / 3) - (startPop / 4);
-
-        // * this is just to display the difference in the number in the console
-        printf("Year %d: %d \n", years, startPop);
-        if (startPop <=endPop)
-        {
+        if (startPop != endPop) {
             years++;
         }
+        // * shorten the code
+        startPop += (floor(startPop / 3)) - (floor(startPop / 4));
+
+        // * this is just to display the difference in the number in the console
+        // printf("Year %d: %d \n", years, startPop);
     }
-    while (startPop <= endPop);
+    while (startPop < endPop);
 
     // TODO: Print number of years
-    printf("Years: %d \n", years);
+    printf("Years: %d", years);
 }
 
