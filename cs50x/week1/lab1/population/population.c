@@ -16,8 +16,7 @@ int main(void)
     do
     {
         startPop = get_int("Starting Population Size: ");
-    }
-    while (startPop < 9);
+    } while (startPop < 9);
 
     // TODO: Prompt for end size
     // * do while loop to force the user to input a positive integer equal to or higher than the starting population size
@@ -25,8 +24,7 @@ int main(void)
     do
     {
         endPop = get_int("Ending Population Size: ");
-    }
-    while (endPop < startPop);
+    } while (endPop < startPop);
 
     // TODO: Calculate number of years until we reach threshold
     // * need a counter named years to increment
@@ -37,7 +35,10 @@ int main(void)
         // die = floor(startPop / 4);
         // startPop += born;
         // startPop -= die;
-        if (startPop != endPop) {
+
+        // * add this conditional validation in front to prevent the years increasing by 1 if the endPop number has been reached
+        if (startPop != endPop)
+        {
             years++;
         }
         // * shorten the code
@@ -45,10 +46,8 @@ int main(void)
 
         // * this is just to display the difference in the number in the console
         // printf("Year %d: %d \n", years, startPop);
-    }
-    while (startPop < endPop);
+    } while (startPop < endPop);
 
     // TODO: Print number of years
     printf("Years: %d", years);
 }
-
