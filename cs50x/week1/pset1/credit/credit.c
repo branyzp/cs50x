@@ -13,7 +13,7 @@ int main(void)
     long ccNoCopy;
 
     // * let's get a prompt from the user for a credit card number
-    do
+    do/-
     {
         ccNo = get_long("Input: ");
     }
