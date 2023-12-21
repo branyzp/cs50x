@@ -1,0 +1,15 @@
+Binary search is a method to find an element in the array, it uses divide and conquer by dividing the entire array into 2 halves and searching one half
+
+Consideration: it needs a sorted array as it assumes that the array is in ascending or descending order
+
+Steps:
+1. Repeat the process until the sub-array is at size 0 e.g. cannot be divided any more
+2. calculate the midpoint of the current array or sub-array
+3. if the target element is less than the midpoint, repeat with the endpoint to be the left of the current midpoint
+4. if the target element is greater than the midpoint, repeat with the endpoint to be the right of the current midpoint.
+
+Worst case: element does not exist in the array or requires division of the array until the last division, thus the target element will not be found or found at the last division.
+O(logn) time
+
+Best case: element is found immediately at the first midpoint O(1) time;
+
