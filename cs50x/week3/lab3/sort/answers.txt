@@ -1,11 +1,16 @@
-sort1 uses: TODO
+sort1 uses: bubble sort
 
-How do you know?: TODO
+How do you know?: Bubble sort's worst case is if the entire array is in reverse order. Therefore, the sorted vs reversed would have a huge difference in time (best and worst case).
 
-sort2 uses: TODO
+sort2 uses: merge sort
 
-How do you know?: TODO
+How do you know?: Merge sort is one of the fastest sorting algorithms, it is more efficient than bubble sort or selection sort. Merge sort also
+has the same time complexity for both best case and worst case scenarios because even if the array is sorted, merge sort will still perform the same
+full procedure to determine whether the dataset is sorted or not.
 
-sort3 uses: TODO
+sort3 uses: selection sort
 
-How do you know?: TODO
+How do you know?: Selection sort is one of the slowest sorting algorithms and the simple way it sorts will lead to it having roughly the same long amount of time taken to sort for best
+and worst case scenarios.
+
+

@@ -1,0 +1,11 @@
+Bubble sort is a sorting algorithm that compares 2 adjacent elements in an array and swaps them if the left element is greater in value than the right element,
+then proceeds to the next element to the right and performs the check again on the right element and the adjacent left element.
+
+Therefore, the subsequent swaps will lead to the highest value elements in the array "bubbling" to the right.
+
+Steps:
+1. Iterate through the array and check the first 2 elements
+2.
+3.
+4.
+5.
