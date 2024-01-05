@@ -17,7 +17,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             image[i][k].rgbtGreen = avgrgb;
         }
     }
-        return;
+    return;
 }
 
 // Convert image to sepia
@@ -33,17 +33,17 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             float sepiaBlue = round(.272 * image[i][k].rgbtRed + .534 * image[i][k].rgbtGreen + .131 * image[i][k].rgbtBlue);
 
             // * to check if each of the sepia color values are more than 255, and if so, to make them 255 at max
-            if(sepiaRed > 255)
+            if (sepiaRed > 255)
             {
                 sepiaRed = 255;
             }
 
-            if(sepiaBlue > 255)
+            if (sepiaBlue > 255)
             {
                 sepiaBlue = 255;
             }
 
-            if(sepiaGreen > 255)
+            if (sepiaGreen > 255)
             {
                 sepiaGreen = 255;
             }
@@ -63,12 +63,12 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     for (int i = 0; i < height; i++)
     {
         // * loop over all pixels
-        for (int k = 0; k < (width/2); k++)
+        for (int k = 0; k < (width / 2); k++)
         {
             // * swap pixels
             RGBTRIPLE temp = image[i][k];
-            image[i][k] = image[i][width - (k+1)];
-            image[i][width - (k+1)] = temp;
+            image[i][k] = image[i][width - (k + 1)];
+            image[i][width - (k + 1)] = temp;
         }
     }
 
@@ -78,26 +78,32 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    // * Create a copy of image
+    RGBTRIPLE copy[height][width];
     for (int i = 0; i < height; i++)
     {
-        // * Create a copy of image
-        RGBTRIPLE copy[height][width];
-
         for (int k = 0; k < width; k++)
         {
             copy[i][k] = image[i][k];
             // * use the copy 2d array for reading and image 2d array for changing
+        }
+    }
 
+    for (int i = 0; i < height; i++)
+    {
+        for (int k = 0; k < width; k++)
+        {
             // * declare the required variables
-            // * pixelCnt is the count of surrounding pixels to the current pixel, so that we can divide to find the average later on
-            int pixelCnt = 0;
+            // * pixelCnt is the count of surrounding pixels to the current pixel, so that we can divide to find the average later
+            // on
+            float pixelCnt = 0;
 
             // * these are the average of each Blue, Red and Green, initially are 0
             int avgB, avgR, avgG;
             avgB = avgR = avgG = 0;
 
             // * loop through the upper and side pixels adjacent to the current pixel
-            for (int a = (i - 1); a < (i + 2); a++ )
+            for (int a = (i - 1); a < (i + 2); a++)
             {
                 for (int b = (k - 1); b < (k + 2); b++)
                 {
@@ -111,9 +117,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     }
                 }
             }
-            image[i][k].rgbtBlue = (int) round(avgB / pixelCnt);
-            image[i][k].rgbtRed = (int) round(avgR / pixelCnt);
-            image[i][k].rgbtGreen = (int) round(avgG / pixelCnt);
+            image[i][k].rgbtBlue = round(avgB / pixelCnt);
+            image[i][k].rgbtRed = round(avgR / pixelCnt);
+            image[i][k].rgbtGreen = round(avgG / pixelCnt);
         }
     }
 
