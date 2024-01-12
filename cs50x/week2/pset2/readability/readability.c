@@ -74,6 +74,7 @@ int count_letters(string text)
     {
         printf("Grade %i\n", index);
     }
+Fvgbhn456
 
     return true;
 }
