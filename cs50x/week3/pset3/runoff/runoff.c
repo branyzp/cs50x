@@ -208,7 +208,7 @@ bool is_tie(int min)
 {
     int tiedCount = 0;
     int remainingCount = 0;
-    // TODO
+    // TODOxxxccvdeddsdq
     // * need to check if the remaining candidates have tied votes aka are all the same
     for (int i = 0; i < candidate_count; i++)
     {
