@@ -1,0 +1,24 @@
+HTML tags used
+1. <h2> and <h3> for differing header styles
+2. <link> for stylesheet, favicon
+3. <img> for the various images
+4. <div> for containers
+5. <p> for short text paragraphs
+6. <span> for selectively changing the css of certain parts of a <p>
+7. <br> break rule for deciding where to break certain text areas and spacing out
+8. <a> for anchor tags which link to other pages
+9. <script> for JavaScript on the page
+10. <hr> for horizontal rule which separates the page into segments
+
+CSS properties used
+1. margin-top
+2. list-style
+3. font-family
+4. font-size
+5. font-color
+
+JavaScript and Bootstrap
+
+
+
+

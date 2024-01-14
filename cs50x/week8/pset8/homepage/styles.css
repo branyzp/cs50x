@@ -1,0 +1,356 @@
+/******************* ELEMENT SELECTORS *******************/
+body {
+    margin-top: 5%;
+    background-color: #AEC6CF;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    margin-top: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 2;
+    color: #6492a3;
+}
+
+h2 {
+    font-family: 'Supermercado One';
+    font-size: 400%;
+    color: #456774;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 135%;
+    color: #ecf1f3;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 125%;
+    color: #456774;
+}
+
+li {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 125%;
+    color: #456774;
+}
+
+hr {
+    width: 10%;
+    border-style: dotted none none;
+    border-width: 10px;
+    border-color: white;
+    margin-top: 5%;
+}
+
+/******************* CLASS SELECTORS *******************/
+.topcontainer {
+    background-color: #AEC6CF;
+    text-align: center;
+}
+
+.middlecontainer {
+    background-color: #AEC6CF;
+    text-align: center;
+}
+
+.bottomcontainer {
+    padding-top: 20px;
+    background-color: #6492a3;
+    text-align: center;
+    font-family: 'Supermercado One';
+    font-size: 120%;
+}
+
+.fullstackdeveloper {
+    font-family: 'Supermercado One';
+    font-size: 300%;
+    color: #6492a3;
+}
+
+.fullstackdev {
+    color: #deece1;
+}
+
+.header-name {
+    font-size: 320%;
+}
+
+.topcloud {
+    height: 300px;
+    position: absolute;
+    right: 10%;
+    animation: left-to-right 12s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s
+}
+
+.bottomcloud {
+    height: 400px;
+    position: absolute;
+    left: 20%;
+    animation: right-to-left 12s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+.salutation {
+    font-size: 300%;
+}
+
+.brandonProfilePic {
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid #333;
+}
+
+.codingpicture1 {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+    width: 300px;
+}
+
+.codingpicture2 {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+    width: 300px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.footer-link {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 125%;
+    color: #456774;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.btn {
+    background-color: #817266;
+    border: 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 150%;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #A19274;
+}
+
+.hidden {
+    display: none;
+}
+
+.ambience {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 20px 10px 20px;
+}
+
+.project-heading {
+    font-size: 300%;
+    text-align: center;
+}
+
+.hangman {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-container {
+    padding: 20px 30px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    width: 450px;
+}
+
+.figure-container {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.figure-part {
+    display: none;
+}
+
+.wrong-letters-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.wrong-letters-container p {
+    margin: 0 0 5px;
+}
+
+.wrong-letters-container span {
+    font-size: 24px;
+}
+
+.word {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.letter {
+    border-bottom: 3px solid #2980b9;
+    display: inline-flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    height: 50px;
+    width: 20px;
+}
+
+.popup_container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background-color: #2980b9;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+.popup_button {
+    cursor: pointer;
+    background-color: #2980b9;
+    border: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.popup_button:active {
+    transform: scale(0.98);
+}
+
+.popup_button:focus {
+    outline: 0;
+}
+
+.notification-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification-container p {
+    margin: 0;
+}
+
+.notification-container.show {
+    transform: translateY(-50px);
+}
+
+
+.icon {
+    height: 50px;
+}
+
+/******************* ID SELECTORS *******************/
+#pick {
+    font-size: 25px;
+    display: inline;
+}
+
+#pomodoro-container {
+    text-align: center;
+    margin-top: 40px;
+    line-height: 3;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 135%;
+    color: #ecf1f3;
+}
+
+#pomodoro-intro {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: center;
+    line-height: 2;
+}
+
+#homeBtn {
+    text-align: center;
+}
+
+#pomodoro-timer {
+    font-size: 600%;
+}
+
+/******************* KEYFRAMES *******************/
+
+@keyframes left-to-right {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(80px, 0px);
+    }
+
+    100% {
+        transform: translateX(0px, 0px);
+    }
+}
+
+@keyframes right-to-left {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(-80px, 0px);
+    }
+
+    100% {
+        transform: translateX(0px, 0px);
+    }
+}
